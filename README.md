@@ -1,2 +1,2 @@
 # PR_demo
-demonstration av Pull Requests med två konto 
+demonstration av Pull Requests och konflikter
