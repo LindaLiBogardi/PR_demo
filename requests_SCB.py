@@ -11,6 +11,18 @@ def hamta_metadata(url: str) -> dict:
     response.raise_for_status()
     return response.json()
 
+def bygg_query(ar: list[str], contents_code: str = "000002UX") -> dict:
+    """Bygger ett PXWeb-query för valda år och tabellinnehåll."""
+    return {
+        "query": [
+            {"code": "Hushallstyp", "selection": {"filter": "item",
+             "values": ["sub", "smb", "ekub", "ekmb", "emub", "emmb", "tot"]}},
+            {"code": "ContentsCode", "selection": {"filter": "item",
+             "values": [contents_code]}},
+            {"code": "Tid", "selection": {"filter": "item", "values": ar}},
+        ],
+        "response": {"format": "json"},
+    }
 
 def hamta_data(url: str, query: dict) -> dict:
     response = requests.post(url, json=query, timeout=10)
