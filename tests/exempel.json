@@ -1,0 +1,93 @@
+{
+  "columns": [
+    {
+      "code": "Hushallstyp",
+      "text": "hushållstyp",
+      "type": "d"
+    },
+    {
+      "code": "Tid",
+      "text": "år",
+      "type": "t"
+    },
+    {
+      "code": "000002UX",
+      "text": "Antal",
+      "type": "c"
+    }
+  ],
+  "comments": [],
+  "data": [
+    {
+      "key": [
+        "sub",
+        "2024"
+      ],
+      "values": [
+        "4171"
+      ]
+    },
+    {
+      "key": [
+        "smb",
+        "2024"
+      ],
+      "values": [
+        "11572"
+      ]
+    },
+    {
+      "key": [
+        "ekub",
+        "2024"
+      ],
+      "values": [
+        "38185"
+      ]
+    },
+    {
+      "key": [
+        "ekmb",
+        "2024"
+      ],
+      "values": [
+        "20750"
+      ]
+    },
+    {
+      "key": [
+        "emub",
+        "2024"
+      ],
+      "values": [
+        "57285"
+      ]
+    },
+    {
+      "key": [
+        "emmb",
+        "2024"
+      ],
+      "values": [
+        "3478"
+      ]
+    },
+    {
+      "key": [
+        "tot",
+        "2024"
+      ],
+      "values": [
+        "135441"
+      ]
+    }
+  ],
+  "metadata": [
+    {
+      "infofile": "LE0201",
+      "updated": "2025-10-15T06:00:00Z",
+      "label": "Antal hushåll med ekonomiskt bistånd efter hushållstyp, år och tabellinnehåll",
+      "source": "SCB"
+    }
+  ]
+}
