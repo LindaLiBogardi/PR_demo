@@ -23,7 +23,6 @@ def bygg_query(ar: list[str], contents_code: str = "000002UX") -> dict:
         ],
         "response": {"format": "json"},
     }
-    
 def hamta_data(url: str, query: dict) -> dict:
     response = requests.post(url, json=query, timeout=10)
     if not response.ok:
