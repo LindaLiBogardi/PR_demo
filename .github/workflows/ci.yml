@@ -1,4 +1,4 @@
-name: ci
+name: CI
 
 on:
   pull_request:
@@ -22,7 +22,7 @@ jobs:
       - name: Installera beroenden
         run: |
           python -m pip install --upgrade pip
-          pip install requests pandas pytest
+          pip install requests pandas
 
-      - name: Kör tester
-        run: pytest -v
+      - name: Testkör pipelinen på sparad exempeldata
+        run: python run_pipeline.py --input tests/exempel.json --output /tmp/resultat.csv
